@@ -1,5 +1,7 @@
 import { Product } from "@/data/products";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 type Props = {
     product: Product;
     onClick: () => void;
@@ -14,8 +16,12 @@ export default function ProductCard({ product, onClick, index }: Props) {
             onClick={onClick}
         >
             {/* Image */}
-            <div className="aspect-square bg-gradient-to-br from-teal-50 to-sky-50 flex items-center justify-center relative">
-                <span className="text-gray-400 text-xs">{product.name}</span>
+            <div className="aspect-square bg-white flex items-center justify-center relative overflow-hidden">
+                <img
+                    src={`${basePath}${product.image}`}
+                    alt={product.name}
+                    className="w-full h-full object-contain p-4"
+                />
                 {product.badge && (
                     <span
                         className={`absolute top-3 left-3 px-3 py-0.5 rounded-full text-xs font-medium text-white ${
