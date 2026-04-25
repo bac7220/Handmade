@@ -68,8 +68,32 @@ B-After/
 - LPページ: `page-entry.php`（フランチャイズ募集LP）
   - Sass: `sass/entry.scss` → `css/entry.css`
 
+## Notion案件ページ
+
+- URL: https://www.notion.so/B-After-1e6cbbb93dc080d69dc9ed8ba6a20186
+- 本番環境・テストサイト・FTP・サーバー情報はこのページに集約
+- 作業メモ・SEO修正履歴・見積もりもここに記録
+
 ## 関連案件（s2nm.jp）
 
 - Google AdSense手動広告をコラムページに設置済み（冒頭・中盤・末尾の3箇所）
 - 自動広告はOFF
 - 広告ユニット名: `column-ads`（記事内フォーマット）
+
+---
+
+## 🔄 セッション終了時のルール
+
+このプロジェクトの作業が一区切りついたら、必ず以下を更新してください。
+
+### 1. ダッシュボードを更新する
+
+`/Users/okudamasaki/Claude/dashboard.md` を開き、このプロジェクトの行を最新状態に書き換える。
+
+- `📝 直近の動き` → 今日やったこと（日付付き）
+- `🎯 次やること` → 次回セッションでやること
+
+### 2. 引き継ぎファイルを作成する（セッションを切る場合）
+
+`/Users/okudamasaki/Claude/projects/'プロジェクト名'/handoff/YYYY-MM-DD.md` に保存。
+
